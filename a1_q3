@@ -1,0 +1,12 @@
+t=eval(input('Enter list of numbers to be tested:'))
+for k in range(len(t)):
+  n=t[k]
+  if n>1:
+    for i in range(2,int(n)):
+      if (n%i==0):
+        print(n,'is not prime')
+        break
+    else:
+     print(n,'is prime')
+  else:
+    print(n,'is not prime')
